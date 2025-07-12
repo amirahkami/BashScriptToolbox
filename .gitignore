@@ -1,0 +1,26 @@
+# Ignore macOS system files
+.DS_Store
+
+# Ignore log files
+*.log
+
+# Ignore compiled binaries and temporary files
+*.out
+*.o
+*.tmp
+*.swp
+
+# Ignore backup files
+*~
+*.bak
+
+# Ignore hidden system folders
+Thumbs.db
+ehthumbs.db
+
+# Ignore any environment or config files
+.env
+config.ini
+
+# Ignore node_modules or other package directories (just in case)
+node_modules/
