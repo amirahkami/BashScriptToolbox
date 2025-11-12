@@ -48,7 +48,6 @@ echo "------------------------------------------------------------"
 
 # Add the currently logged-in user to the docker group
 sudo usermod -aG docker $(whoami)
-newgrp docker
 
 echo "------------------------------------------------------------"
 echo " Installed versions:"
@@ -82,4 +81,7 @@ echo ""
 echo "============================================================"
 echo "🎉 All done! Docker and Minikube are ready to use."
 echo "============================================================"
+
+# Apply group last to avoid interrupting installation with session restart
+newgrp docker
 
