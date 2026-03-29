@@ -85,3 +85,4 @@ echo "============================================================"
 # Apply group last to avoid interrupting installation with session restart
 newgrp docker
 
+# TODO: install helm
